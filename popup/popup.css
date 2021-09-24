@@ -1,0 +1,38 @@
+body {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  background-color: #0089ef;
+  color: #fff;
+  font-size: 11pt;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+main div {
+  width: 100%;
+  min-width: 300px;
+}
+
+main div #activateBtn {
+  width: 100%;
+  border: none;
+  background: none;
+  color: #000;
+  background-color: #fa759e;
+  border: 2px solid #0089ef;
+  padding: 3px;
+  font-family: inherit;
+  font-weight: bold;
+  height: 35px;
+  cursor: pointer;
+}
+
+main div #activateBtn:hover {
+  border: 2px solid #fa759e;
+}
+
+.activated {
+  color: #58fc66;
+}

@@ -1,0 +1,5 @@
+API url(no key needded) : https://v2.jokeapi.dev/joke/Any
+
+*************************
+popup.js executed when popup opened.
+background.js executed when the extention is installed for the first time or reloaded

@@ -1,0 +1,35 @@
+{
+    "name": "Attandence taker",
+    "author": "Essadeq EL AAMIRI (essadeq0701@gmail.com)",
+    "description": "Take attandances in GoogleMeet and Zoom (in futur version) meets easly, this version is connected with a database which is used to store data for our web application",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "icons": {
+        "16": "./icons/attendant_list_16x16.png",
+        "32": "./icons/attendant_list_32x32.png",
+        "128": "./icons/attendant_list_128x128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://meet.google.com/*",
+                "https://meet.google.com/*"
+            ],
+            "js": [
+                "./content_scripts/forground.js"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_popup": "./popup/popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "activeTab"
+    ]
+}
