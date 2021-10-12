@@ -30,6 +30,8 @@
     "permissions": [
         "tabs",
         "storage",
-        "activeTab"
+        "activeTab",
+        "http://meet.google.com/*",
+        "https://meet.google.com/*"
     ]
 }
