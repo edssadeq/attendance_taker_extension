@@ -150,14 +150,24 @@ function extractMeetDataAndMessages() {
           participant_messages.push(message_text);
         }
       });
-      participant_message = {
-        participant_name,
-        message_timestamp,
-        message_formatted_timestamp,
-        participant_messages,
-      };
+      // participant_message = {
+      //   participant_name,
+      //   message_timestamp,
+      //   message_formatted_timestamp,
+      //   participant_messages,
+      // };
 
-      messages.push(participant_message);
+      if (participant_messages.length != 0) {
+        participant_message = {
+          participant_name,
+          message_timestamp,
+          message_formatted_timestamp,
+          participant_messages,
+        };
+        messages.push(participant_message);
+      }
+
+      // messages.push(participant_message);
     }
   });
 
